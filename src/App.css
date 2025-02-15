@@ -14,6 +14,13 @@ body {
   overflow: hidden; /* Prevent scrolling outside the sections */
 }
 
+.sections-wrapper {
+  height: 100vh; /* Ensure the wrapper covers the full viewport height */
+  width: 100%; /* Full width of the viewport */
+  overflow: hidden; /* Prevent scrolling outside the wrapper */
+  position: relative; /* Required for positioning its children */
+}
+
 /* Section styles for the full-page scrolling effect */
 .section {
   height: 100vh; /* Full screen height */
