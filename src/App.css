@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body {
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: Arial, sans-serif;
+  overflow: hidden; /* Prevent scrolling outside the sections */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Section styles for the full-page scrolling effect */
+.section {
+  height: 100vh; /* Full screen height */
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  transition: transform 0.5s ease; /* Smooth transition for scrolling */
 }
 
-.App-link {
-  color: #61dafb;
+/* Custom section colors */
+.section-1 {
+  background-color: #ffcc00; /* Yellow */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.section-2 {
+  background-color: #ff6347; /* Tomato Red */
+}
+
+.section-3 {
+  background-color: #3b5998; /* Facebook Blue */
+}
+
+.section-4 {
+  background-color: #34ebc5; /* Turquoise */
+}
+
+.section-5 {
+  background-color: #ffff; /* White */
+}
+
+/* Optional: Add smooth scrolling for the browser */
+html {
+  scroll-behavior: smooth;
 }
