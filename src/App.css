@@ -22,6 +22,7 @@ body {
   justify-content: center;
   text-align: center;
   transition: transform 0.5s ease; /* Smooth transition for scrolling */
+  border: 2px solid red;
 }
 
 /* Custom section colors */
